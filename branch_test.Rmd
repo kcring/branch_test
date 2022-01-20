@@ -9,6 +9,18 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
+library(ggplot2)
+
 
 ```
+
+```{r}
+
+ggplot(starwars, aes(x = mass, y = height)) + 
+  geom_point(color='blue')
+
+
+```
+
+
 
